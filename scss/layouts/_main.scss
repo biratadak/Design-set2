@@ -1,0 +1,57 @@
+@use "../base/variables" as *;
+@import "../modules/mixin";
+@import "../modules/buttons";
+
+.main {
+  display: flex;
+
+  .content {
+    .content__title {
+
+      // Mixin to get horizontal line before the content.
+      &::before {
+        margin-right: 10px;
+        @include horizontal_line(3px, 10%);
+      }
+
+      color: $primary-green;
+    }
+
+    .content__heading {
+      font-family: Bebas_Neue;
+      font-size: $font-large;
+      margin: 10px 0px;
+    }
+
+    .content__text {
+      color: $primary-grey;
+      font-size: large;
+      margin: 10px 0px;
+      width: 75%;
+    }
+
+    .content__button {
+      @include button-style1;
+      font-size: large;
+      margin: 25px auto;
+    }
+
+    .content__tags {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      list-style: none;
+      width: 50%;
+
+      li {
+        // border: 1px solid red;
+        margin: 10px 5px;
+        text-align: center;
+      }
+
+      :nth-child(3n-1)::after,
+      :nth-child(3n-1)::before {
+        @include bullet-style1;
+      }
+    }
+  }
+}

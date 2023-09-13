@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato";
+  color: #3d3d3d;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+@font-face {
+  font-family: "Bebas_Neue";
+  src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato-bold";
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url(../fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url(../fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Lato-Thin";
+  src: url(../fonts/Lato/Lato-Thin.ttf);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav .menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav .menu__links .menu__link {
+  padding: 0 15px;
+}
+.nav .menu__links .menu__link:hover a {
+  color: #febb0c;
+}
+.nav .nav__buttons button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+}
+.nav .nav__buttons button:hover {
+  background-color: #007a82;
+  color: white;
+}
+
+.main {
+  display: flex;
+}
+.main .content .content__title {
+  color: #007a82;
+}
+.main .content .content__title::before {
+  margin-right: 10px;
+  background: #febb0c;
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  vertical-align: middle;
+  width: 10%;
+}
+.main .content .content__heading {
+  font-family: Bebas_Neue;
+  font-size: 100px;
+  margin: 10px 0px;
+}
+.main .content .content__text {
+  color: #575757;
+  font-size: large;
+  margin: 10px 0px;
+  width: 75%;
+}
+.main .content .content__button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: large;
+  margin: 25px auto;
+}
+.main .content .content__button:hover {
+  background-color: #007a82;
+  color: white;
+}
+.main .content .content__tags {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  width: 50%;
+}
+.main .content .content__tags li {
+  margin: 10px 5px;
+  text-align: center;
+}
+.main .content .content__tags :nth-child(3n-1)::after,
+.main .content .content__tags :nth-child(3n-1)::before {
+  content: " ";
+  background-color: #febb0c;
+  border-radius: 5px;
+  display: inline-block;
+  height: 10px;
+  margin: auto 20px;
+  vertical-align: middle;
+  width: 10px;
+}
+
+footer .cards {
+  position: relative;
+  top: -55px;
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+}
+footer .cards .cards__item {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+  padding: 20px;
+}
+footer .cards .cards__item .cards__title {
+  font-family: Bebas_Neue;
+  color: #007a82;
+  font-size: 35px;
+  width: 50%;
+}
+footer .cards .cards__item .cards__content {
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+footer .cards .cards__item .cards__content::after {
+  margin-top: 30px;
+  background: #febb0c;
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  vertical-align: middle;
+  width: 100%;
+}
+footer .cards .cards__item:hover {
+  background-color: #007a82;
+}
+footer .cards .cards__item:hover .cards__title {
+  color: #febb0c;
+}
+footer .cards .cards__item:hover .cards__content {
+  color: white;
+}/*# sourceMappingURL=global.css.map */

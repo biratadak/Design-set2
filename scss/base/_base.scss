@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato";
+  color: $primary-black;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+// Imports the font styles.
+@import "../modules/typography";
+// Imports the navbar styles.
+@import "../layouts/nav";
+// Imports the main content styles.
+@import "../layouts/main";
+// Imports the footer content styles.
+@import "../layouts/footer";

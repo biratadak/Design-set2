@@ -1,0 +1,9 @@
+@mixin button-style1 {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  &:hover {
+    background-color: $primary-green;
+    color: white;
+  }
+}
