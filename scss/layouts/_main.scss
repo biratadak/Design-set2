@@ -10,16 +10,15 @@
 
       // Mixin to get horizontal line before the content.
       &::before {
-        margin-right: 10px;
         @include horizontal_line(3px, 10%);
+        margin-right: 10px;
       }
-
       color: $primary-green;
     }
 
     .content__heading {
-      font-family: Bebas_Neue;
-      font-size: $font-large;
+      font-family: $font-secondary;
+      font-size: $fs-large;
       margin: 10px 0px;
     }
 
@@ -43,7 +42,6 @@
       width: 50%;
 
       li {
-        // border: 1px solid red;
         margin: 10px 5px;
         text-align: center;
       }

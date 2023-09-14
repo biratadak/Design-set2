@@ -1,11 +1,16 @@
 // Default variables for font sizes.
-$font-large: 100px;
-$font-med: 35px;
-$font-small: 15px;
+$fs-large: 100px;
+$fs-med: 35px;
+$fs-small: 15px;
+
+// Default font styles.
+$font-primary: "Lato";
+$font-secondary: "Bebas_Neue";
 
 // Default variables for Colors.
 $primary-black: #3d3d3d;
+$primary-green: #007a82;
 $primary-grey: #666666;
 $primary-off-white: #ededed;
-$primary-green: #007a82;
+$primary-white: #ffffff;
 $primary-yellow: #febb0c;

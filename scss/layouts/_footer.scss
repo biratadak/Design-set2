@@ -3,13 +3,13 @@
 footer {
   .cards {
     .cards__item {
-      background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+      background-color: $primary-white;
+      box-shadow: rgba($primary-black, 0.2) 0px 10px 50px;
 
       .cards__title {
-        font-family: Bebas_Neue;
         color: $primary-green;
-        font-size: $font-med;
+        font-family: $font-secondary;
+        font-size: $fs-med;
         width: 50%;
       }
 
@@ -31,18 +31,17 @@ footer {
         }
 
         .cards__content {
-          color: white;
+          color: $primary-white;
         }
       }
-
       padding: 20px;
     }
 
+    @include container(sm);
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     top: -55px;
-    @include container(sm);
-    display: flex;
-    column-gap: 30px;
-    justify-content: space-between;
   }
 }

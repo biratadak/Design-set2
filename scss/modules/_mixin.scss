@@ -17,7 +17,6 @@
 
 @mixin container($param) {
   margin: 0 auto;
-
   $size: map-get(
     (
       lg: 1320px,
@@ -25,7 +24,6 @@
     ),
     $param
   );
-
   max-width: $size;
 }
 
@@ -39,9 +37,9 @@
 }
 
 @mixin bullet-style1 {
-  content: " ";
   background-color: $primary-yellow;
   border-radius: 5px;
+  content: " ";
   display: inline-block;
   height: 10px;
   margin: auto 20px;
