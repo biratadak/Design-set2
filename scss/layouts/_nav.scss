@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+@import "../modules/mixin";
+@import "../modules/buttons";
+
+.nav {
+  @include flex-row("sb");
+  padding: 20px 0;
+
+  // Styling for menu links available in the navbar.
+  .menu__links {
+    // Alinging links in a row horizontally.
+    @include flex-row("sb");
+    list-style: none;
+
+    .menu__link {
+      padding: 0 15px;
+    }
+
+    .menu__link:hover {
+      a {
+        color: $primary-yellow;
+      }
+    }
+  }
+
+  // Styling for buttons available in the navbar.
+  .nav__buttons {
+    button {
+      @include button-style1;
+    }
+  }
+}

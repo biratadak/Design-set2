@@ -1,0 +1,47 @@
+@use "../base/variables" as *;
+
+footer {
+  .cards {
+    .cards__item {
+      background-color: $primary-white;
+      box-shadow: rgba($primary-black, 0.2) 0px 10px 50px;
+
+      .cards__title {
+        color: $primary-green;
+        font-family: $font-secondary;
+        font-size: $fs-med;
+        width: 50%;
+      }
+
+      .cards__content {
+        color: $primary-grey;
+        margin-top: 10px;
+
+        &::after {
+          margin-top: 30px;
+          @include horizontal_line(3px, 100%);
+        }
+      }
+
+      &:hover {
+        background-color: $primary-green;
+
+        .cards__title {
+          color: $primary-yellow;
+        }
+
+        .cards__content {
+          color: $primary-white;
+        }
+      }
+      padding: 20px;
+    }
+
+    @include container(sm);
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -55px;
+  }
+}

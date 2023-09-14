@@ -1,0 +1,48 @@
+@mixin flex-row($param) {
+  display: flex;
+  flex-direction: row;
+
+  $option: map-get(
+    (
+      c: center,
+      sa: space-around,
+      sb: space-between,
+      se: space-evenly,
+    ),
+    $param
+  );
+
+  justify-content: $option;
+}
+
+@mixin container($param) {
+  margin: 0 auto;
+  $size: map-get(
+    (
+      lg: 1320px,
+      sm: 1140px,
+    ),
+    $param
+  );
+  max-width: $size;
+}
+
+@mixin horizontal_line($height, $width) {
+  background: $primary-yellow;
+  content: " ";
+  display: inline-block;
+  height: $height;
+  vertical-align: middle;
+  width: $width;
+}
+
+@mixin bullet-style1 {
+  background-color: $primary-yellow;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  height: 10px;
+  margin: auto 20px;
+  vertical-align: middle;
+  width: 10px;
+}
